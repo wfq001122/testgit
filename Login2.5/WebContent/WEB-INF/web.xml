@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Login2.5</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>test</display-name>
+    <servlet-name>test</servlet-name>
+    <servlet-class>login.test</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>buy</display-name>
+    <servlet-name>buy</servlet-name>
+    <servlet-class>login.buy</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>buy</servlet-name>
+    <url-pattern>/buy</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>show</display-name>
+    <servlet-name>show</servlet-name>
+    <servlet-class>login.show</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>show</servlet-name>
+    <url-pattern>/show</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <servlet-name>autologin</servlet-name>
+    <servlet-class>login.autologin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>autologin</servlet-name>
+    <url-pattern>/autologin</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+	<filter-name>filtertest</filter-name>
+	<filter-class>login.filtertest</filter-class>
+  </filter>
+
+  <filter-mapping>
+	<filter-name>filtertest</filter-name>
+	<url-pattern>/autologin.html</url-pattern>
+	
+  </filter-mapping>
+</web-app>
